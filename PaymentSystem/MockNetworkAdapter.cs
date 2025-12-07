@@ -1,6 +1,9 @@
 namespace PaymentSystem;
 
-public class MockNetworkAdapter
+public class MockNetworkAdapter : INetworkConnection
 {
-    
+    public bool IsConnected()
+    {
+        return true;
+    }
 }

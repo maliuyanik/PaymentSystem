@@ -43,12 +43,22 @@ public class CreditCardPayment : BasePayment
 
     public override PaymentStatus ProcessPayment(double amount)
     {
-        if (Limit < amount ||amount == 0)
+        _logger.Log("Transaction ID:" + PaymentId);
+        _logger.Log("Time:" + CreatedDate);
+        _logger.Log("Processing credit card payment of" + amount + "for card" +  GetMaskedCardNumber());
+        
+        if (Limit < amount)
         {
-            _logger.Log($"Insufficient balance: {Limit}, amount: {amount}");
+            _logger.Log($"Insufficient balance: {Limit}");
             return PaymentStatus.InsufficientBalance;
         }
 
+        if (amount <= 0)
+        {
+            _logger.Log($"Insufficient balance: {amount}");
+            return PaymentStatus.InsufficientBalance;
+        }
+        _logger.Log("SUCCESS: Payment processed.");
         return PaymentStatus.Success;
     }
     
