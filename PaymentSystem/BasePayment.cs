@@ -4,7 +4,7 @@ namespace PaymentSystem;
 
 public abstract class BasePayment : IPaymentProcessor
 {
-    public abstract PaymentStatus ProcessPayment(double amount);
+    public abstract PaymentStatus ProcessPayment(decimal amount);
     private readonly Guid _paymentId;
     protected DateTimeOffset CreatedDate { get; init; } = DateTimeOffset.UtcNow;
     protected readonly ILogger _logger;
