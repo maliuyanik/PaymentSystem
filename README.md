@@ -1,8 +1,8 @@
 # Payment System Architecture (.NET 9 / C#)
 
-Bu proje, **Object-Oriented Programming (OOP)** prensiplerinin ve modern **.NET** mimarisinin uygulanmasını simüle eden modüler bir ödeme sistemi altyapısıdır.
+Bu proje, **OOP** prensiplerinin ve modern **.NET** mimarisinin uygulanmasını simüle eden modüler bir ödeme sistemi altyapısıdır.
 
-Mevcut Java tecrübemi ve OOP yetkinliğimi, **C# ve .NET ekosistemine** adapte etmek amacıyla; daha önce Java ile geliştirdiğim bir mimariyi **syntax, bellek yönetimi ve yapısal farklılıkları (Java vs C#)** analiz ederek .NET 9 üzerinde yeniden inşa ettim.
+Mevcut Java tecrübemi ve OOP yetkinliğimi, **C# ve .NET ekosistemine** adapte etmek amacıyla Java ile geliştirdiğim bir mimariyi **syntax, bellek yönetimi ve yapısal farklılıkları (Java vs C#)** analiz ederek .NET 9 üzerinde yeniden inşa ettim.
 
 ## Projenin Amacı ve Kazanımlar
 Bu projeyi geliştirirken odaklandığım temel teknikler ve C# özellikleri:
